@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29424.173
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfAppDrawBitmap", "WpfAppDrawBitmap\WpfAppDrawBitmap.csproj", "{62275C06-11DB-41FC-84B1-088E0170C937}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{62275C06-11DB-41FC-84B1-088E0170C937}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62275C06-11DB-41FC-84B1-088E0170C937}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62275C06-11DB-41FC-84B1-088E0170C937}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62275C06-11DB-41FC-84B1-088E0170C937}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D21EE188-95AD-4D56-9093-07A397A966C6}
+	EndGlobalSection
+EndGlobal

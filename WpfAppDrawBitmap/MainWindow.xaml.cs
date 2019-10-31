@@ -15,10 +15,14 @@ namespace WpfAppDrawBitmap
 
         void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            using var bitmap = new Bitmap((int)Width, (int)Height);
+            // Calculate pixel dimensions so we can draw pixel-perfect. https://stackoverflow.com/a/3450426
+            var pixelDimensions = PresentationSource.FromVisual(image).CompositionTarget.TransformToDevice.Transform((Vector)image.DesiredSize);
+            var width = (int)pixelDimensions.X;
+            var height = (int)pixelDimensions.Y;
+            using var bitmap = new Bitmap(width, height);
             using var g = Graphics.FromImage(bitmap);
             g.Clear(Color.Red);
-            g.FillRectangle(Brushes.Green, 0, 0, (float)Width / 2, (float)Height / 2);
+            g.FillRectangle(Brushes.Green, 0, 0, width / 2, height / 2);
             var bitmapImage = new BitmapImage();
             bitmapImage.BeginInit();
             using var pngStream = new MemoryStream();
